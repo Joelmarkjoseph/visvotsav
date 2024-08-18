@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <i class="bx bx-menu"></i>
+        <div class="logo"><a href="#">VISVOTSAV</a></div>
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <span class="logo-name">VISVOTSAV</span>
+            <i class="bx bx-x"></i>
+          </div>
+          <div class="sidebar-logo">
+            <span class="logo-name">HOME</span>
+            <i class="bx bx-x"></i>
+          </div>
+          <ul class="links">
+            <li><a href="index.html"> HOME</a></li>
+            <li><a href="REGISTRATION.HTML">REGISTRATION</a></li>
+            <li>
+              <a href="#">EVENTS</a>
+              <i class="bx bxs-chevron-down js-arrow arrow"></i>
+              <ul class="js-sub-menu sub-menu">
+                <li><a href="events.html">PAPER PRESENTATION</a></li>
+                <li><a href="events.html">POSTER PRESENTATION</a></li>
+                <li><a href="events.html">WEB CONTEST</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br /><br /><br />
+    <div class="container">
+      <h2>Registration Form</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname" name="firstname" required />
+        </div>
+        <div class="form-group">
+          <label for="middlename">Middle Name</label>
+          <input type="text" id="middlename" name="middlename" />
+        </div>
+        <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" name="lastname" required />
+        </div>
+        <div class="form-group">
+          <label for="course">Course</label>
+          <select id="course" name="course">
+            <option value="computer-science">Computer Science</option>
+            <option value="engineering">Engineering</option>
+            <option value="business">Business</option>
+            <option value="medicine">Medicine</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Events</label>
+          <div>
+            <!-- <input type="radio" id="web-contest" name="event" value="Web Contest"> -->
+            <label for="web-contest">Web Contest</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="poster-presentation"
+              name="event"
+              value="Poster Presentation"
+            />
+            <label for="poster-presentation">Poster Presentation</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="paper-presentation"
+              name="event"
+              value="Paper Presentation"
+            />
+            <label for="paper-presentation">Paper Presentation</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="web-contest"
+              name="event"
+              value="Web Contest"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <button type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
